@@ -32,6 +32,10 @@ app.post("/create", async (req, res) => {
     res.status(500).json({ error: result.error, success: result.success });
   }
 });
+
+app.get("/ping", async (req, res) => {
+  res.status(200);
+});
 const PORT = 3000;
 httpServer.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
