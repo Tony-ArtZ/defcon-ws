@@ -34,7 +34,7 @@ app.post("/create", async (req, res) => {
 });
 
 app.get("/ping", async (req, res) => {
-  res.status(200);
+  res.sendStatus(200);
 });
 const PORT = 3000;
 httpServer.listen(PORT, () => {
